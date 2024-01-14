@@ -1,0 +1,163 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: grid;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.board {
+  height: 450px;
+  background-color: rgb(245, 245, 245);
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  border: 1px solid rgb(250,250,250);
+}
+
+.tile {
+  width: 48px;
+  height: 48px;
+  border: 1px solid lightgray;
+
+  font-size: 20px;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digits {
+  width: 450px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.number:hover {
+  cursor: pointer;
+  background-color: rgb(230,230,230);
+}
+
+.number {
+  width: 44px;
+  height: 44px;
+  margin: 2px;
+  border: 1px solid black;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.puzzle {
+  border: 1px solid rgb(225,225,225);
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.puzzle:hover {
+  cursor: pointer;
+  background-color: rgb(230,230,230);
+}
+
+hr {
+  width: 1000px;
+  background-color:rgb(230,230,230);
+  border: none;
+  height: 1.5px;
+}
+
+.selected {
+  background-color: rgb(220,220,220);
+}
+
+.start-board {
+  background-color: whitesmoke;
+}
+
+.horizontal-line {
+  border-bottom-color: black;
+}
+.vertical-line  {
+  border-right-color: black;
+}
+
+.mode {
+  height: 45px;
+  display:grid;
+}
+
+.wrong-answer {
+  color: red;
+}
+
+.errors {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.mode {
+  display:grid;
+  grid-template-columns: 1fr 52px 71px 52px 90px 100px 2.3fr 61px 1fr;
+  align-items: center;
+}
+
+.easy, .medium, .hard, .new-game {
+  display:flex;
+  border: solid rgb(225,225,225);
+  margin-left: -1px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 3px 5px 3px 5px;
+}
+
+.solve {
+  display: flex;
+  border: solid rgb(225,225,225);
+  height: 30px;
+  align-items: center;
+  padding: 3px 5px 3px 5px;
+  justify-content: center;
+}
+
+
+
+.easy:Hover, .medium:hover, .hard:hover, .new-game:hover, .solve:hover {
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  border: solid rgb(225,225,225);
+  height: 30px;
+  padding: 3px 5px 3px 5px;
+}
+
+
